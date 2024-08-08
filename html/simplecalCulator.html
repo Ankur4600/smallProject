@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/smallProject/css/simpleCalculator.css">
+    <title>Calculator project</title>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="input" readonly >
+        <div id="div">
+            <button id="button-c" class="button" onclick="currentValue='';
+    document.querySelector('#input').value=currentValue;">c</button>
+            <button id="button-1" class="button" onclick="one()">1</button>
+            <button id="button-2" class="button" onclick="two()">2</button>
+            <button id="button-ad" class="button" onclick="plus()">+</button>
+            <button id="button-3" class="button" onclick="three()">3</button>
+            <button id="button-4" class="button" onclick="four()">4</button>
+            <button id="button-sub" class="button" onclick="minus()">-</button>
+            <button id="button-5" class="button" onclick="five()">5</button>
+            <button id="button-6" class="button" onclick="six()">6</button>
+            <button id="button-mul" class="button" onclick="multiply()">*</button>
+            <button id="button-7" class="button" onclick="seven()">7</button>
+            <button id="button-8" class="button" onclick="eight()">8</button>
+            <button id="button-div" class="button" onclick="divide()">/</button>
+            <button id="button-9" class="button" onclick="nine()">9</button>
+            <button id="button-0" class="button" onclick="zero()">0</button>
+            <button id="button-dot" class="button" onclick="dot()">.</button>
+            <button id="button-equal" class="button" onclick="equals()">=</button>
+        </div>
+    </div>
+    <script src="/smallProject/script/simpleCalculator.js"></script>
+</body>
+</html>
