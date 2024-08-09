@@ -59,10 +59,10 @@ function multiply(){
     currentValue=currentValue+'*';
     document.querySelector('#input').value=currentValue;
 }
-// function clear(){
-//     currentValue='';
-//     document.querySelector('#input').value=currentValue;
-// }
+function clear(){
+    currentValue='';
+    document.querySelector('#input').value=currentValue;
+}
 function equals(){
     let result=eval(currentValue);
     currentValue=result;
