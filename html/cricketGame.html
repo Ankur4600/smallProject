@@ -8,9 +8,14 @@
 </head>
 <body>
     <h1>Bat Ball Stump Game</h1>
-    <button id="bat" class="button" onclick=" bat()">Bat</button>
-    <button id="ball" class="button" onclick="ball()">Ball</button>
-    <button id="stump" class="button" onclick="stump()">Stump</button>
+    <button id="bat" class="button" onclick=" let computerMove=generateChoice(); let ans=getResult('bat',computerMove);
+   showResult(computerMove,'bat',ans);">Bat</button>
+
+    <button id="ball" class="button" onclick=" computerMove=generateChoice();
+     ans=getResult('ball',computerMove);
+     showResult(computerMove,'ball',ans);">Ball</button>
+
+    <button id="stump" class="button" onclick="computerMove=generateChoice();ans=getResult('stump',computerMove);showResult(computerMove,'stump',ans);">Stump</button>
     <script src="/smallProject/script/cricketGame.js"></script>
    
 </body>
