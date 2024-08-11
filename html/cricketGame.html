@@ -7,15 +7,41 @@
     <link rel="stylesheet" href="/smallProject/css/cricketGame.css">
 </head>
 <body>
+<div id="container">
     <h1>Bat Ball Stump Game</h1>
-    <button id="bat" class="button" onclick=" let computerMove=generateChoice(); let ans=getResult('bat',computerMove);
-   showResult(computerMove,'bat',ans);">Bat</button>
 
-    <button id="ball" class="button" onclick=" computerMove=generateChoice();
-     ans=getResult('ball',computerMove);
-     showResult(computerMove,'ball',ans);">Ball</button>
+  <button class="choice-button" onclick="
+  let computerChoice = generateComputerChoice();
+  let resultMsg = getResult('Bat', computerChoice);
+  showResult('Bat', computerChoice, resultMsg);
+  ">
+    <img src="/smallProject/images/bat.jpg" alt="Bat Image" class="choice-image">  
+  </button>
 
-    <button id="stump" class="button" onclick="computerMove=generateChoice();ans=getResult('stump',computerMove);showResult(computerMove,'stump',ans);">Stump</button>
+  <button class="choice-button" onclick="
+    computerChoice = generateComputerChoice();
+    resultMsg = getResult('Ball', computerChoice);
+    showResult('Ball', computerChoice, resultMsg);
+  ">
+    <img src="/smallProject/images/ball.jpg" alt="Ball Image" class="choice-image">  
+  </button>
+
+  <button class="choice-button" onclick="
+    computerChoice = generateComputerChoice();
+    resultMsg = getResult('Stump', computerChoice);
+    showResult('Stump', computerChoice, resultMsg);
+  ">
+    <img src="/smallProject/images/stump.jpg" alt="Stump Image" class="choice-image">
+  </button>
+
+  <h3 id="user-move"></h3>
+  <h3 id="computer-move"></h3>
+  <h3 id="result"></h3>
+  <h3 id="score"></h3>
+
+  <button onclick="localStorage.clear()
+      resetScore();">Reset</button>
+</div>
     <script src="/smallProject/script/cricketGame.js"></script>
    
 </body>
