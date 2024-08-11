@@ -5,9 +5,9 @@ body {
   .choice-button {
     height: 100px;
     width: 100px;
-    border: none;
+    border: .05px solid rgb(204, 201, 201);
     margin: 10px;
-    background-color: rgb(164, 212, 130);
+    background-color: bisque;
     border-radius: 20px;
     cursor: pointer;
   }
@@ -24,4 +24,10 @@ body {
     position: absolute;
     left: 33.33%; 
     background-color: bisque;
+  }
+  #reset{
+    border: none;
+    border-radius: 10px;
+    background-color: bisque;
+
   }
