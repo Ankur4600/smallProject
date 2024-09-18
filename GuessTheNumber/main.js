@@ -1,5 +1,5 @@
 let randomNum = parseInt(Math.random() * 100 + 1)
-console.log(randomNum)
+//console.log(randomNum)
 
 const input = document.querySelector('#guessField')
 const button = document.querySelector('#subt')
@@ -80,7 +80,7 @@ function newGame(){
   start.addEventListener('click', function(e){
     e.preventDefault();
     randomNum = parseInt(Math.random() * 100 + 1);
-    console.log(randomNum)
+    //console.log(randomNum)
     guesses = [];
     guessNum = 1;
     previousGuess.innerHTML = '';
