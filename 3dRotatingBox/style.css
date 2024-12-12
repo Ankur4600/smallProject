@@ -12,31 +12,23 @@
   background-color: rgb(29, 28, 28);
   perspective: 1000px;
 }
-.shodow{
-  height: 800px;
-  width: 800px;
-  background-color: rgba(255, 255, 255, 0.308);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 5px 5px 50px white -5px -5px 50px white;
-}
+
 #cubeMainBody{
   height: 300px;
   width: 300px; 
   transform-style: preserve-3d;
   position: relative;
-  animation: rotate 10s linear infinite;
+  animation: rotate 6s ease-in-out infinite;
+  /* transform-origin:  left bottom; */
 }
 @keyframes rotate{
   0%{
-    transform: rotate3d(1,1,1,0deg);
-    
+    /* transform: rotate3d(1,1,1,0deg);  */
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
   100%{
-    transform: rotate3d(1,1,1,360deg);
-    
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    /* transform: rotate3d(1,1,1,360deg);  */
   }
 }
 .Faces{
@@ -50,6 +42,7 @@
 }
 .Faces h3{
   color: white;
+  font-size: 30px;
 }
 #facefront{
   background-color: rgba(255, 255, 0, 0.3);
