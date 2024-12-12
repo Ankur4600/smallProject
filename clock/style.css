@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#section1{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(3, 21, 30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clockMainBody{
+  height: 300px;
+  width: 300px;
+  border: 2px dashed yellow;
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+#clockMainBody video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: .7;
+}
+.times{
+  color: rgb(224, 188, 7);
+  position: absolute;
+}
+#time12{
+  top:15px;
+}
+#time3{
+right: 15px;
+
+}
+#time6{
+bottom: 15px;
+}
+#time9{
+left: 15px;
+}
+.niddle{
+  width: 6px;
+  border-radius: 0% 0% 3px 3px;
+  position: absolute;
+  bottom: 50%;
+  transform-origin: 50% 100%;
+}
+#hour{
+  height: 25%;
+  background-color: rgb(132, 0, 107);
+  clip-path: polygon(50% 0%, 100% 5%,100% 100%,0% 100%,0% 5%,50% 0%);
+  animation: rotate 43200s linear infinite;
+}
+#minutes{
+  height: 30%;
+  background-color: white;
+  clip-path: polygon(50% 0%, 100% 5%,100% 100%,0% 100%,0% 5%,50% 0%);
+  animation: rotate 3600s linear infinite;
+}
+#second{
+  height: 35%;
+  background-color: rgb(224, 188, 7);
+  position: absolute;
+  clip-path: polygon(50% 0%, 100% 5%,100% 100%,0% 100%,0% 5%,50% 0%);
+  animation: rotate 60s steps(60) infinite;
+}
+#centerdiv{
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: rgb(224, 188, 7);
+  position: absolute;
+  z-index: 99;
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+#backgroundVideo{
+  height: 700px;
+  opacity: .8;
+  position: absolute;
+  left: -100px;
+}
