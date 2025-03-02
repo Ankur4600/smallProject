@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Signika Negative", serif;
+  text-transform: capitalize;
+}
+.container{
+  width: 60vw;
+  border-radius: 50px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 5px black;
+}
+.container>h1{
+  letter-spacing: 4px;
+  margin: 20px 0;
+}
+#weather-form{
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#city-input{
+  height: 36px;
+  font-size: 20px;
+  padding: 5px 10px;
+  width: 500px;
+  outline: none;
+  border: none;
+  background-color: rgb(160, 185, 235);
+  border-radius: 5px 0 0 5px;
+  
+}
+#submitBtn{
+  height: 36px;
+  width: 150px;
+  border: none;
+  background-color: rgb(32, 101, 239);
+  color: white;
+  font-size: 20px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+#weather-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  margin: 10px 0;
+}
+.temperature{
+  font-size: 50px;
+  font-weight: 700;
+}
+.description{
+  margin: 20px 0;
+  font-size: 20px;
+  text-align: center;
+}
+.details{
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  align-items: center;
+}
+.details>div{
+  margin: 50px 0;
+  padding: 20px;
+  height: 70px;
+  width: 150px;
+  font-size: 20px;
+  background-color: rgb(219, 216, 216);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+}
