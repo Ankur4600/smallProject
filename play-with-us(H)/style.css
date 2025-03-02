@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+#mainBody{
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(150deg ,rgba(255, 255, 0, 0.132), rgb(255, 228, 228),rgba(131, 241, 255, 0.53),rgba(255, 255, 0, 0.155) );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section1{
+  width: 50%;
+  height: 500px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#section1>h1{
+  font-size: 50px;
+  -webkit-text-stroke: 2px white;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 3px black;
+  
+}

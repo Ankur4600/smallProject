@@ -1,0 +1,71 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background-color: rgb(11, 11, 11);
+  overflow: hidden;
+}
+span{
+  position: absolute;
+  background-color: url('https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-512.png');
+  background-size: cover;
+  animation: movingheart 8s linear infinite;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+@keyframes movingheart{
+  0%{
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      filter: hue-rotate(0turn);
+  }
+  100%{
+     transform: translate(-50%, -5000%);
+     opacity: 0;
+     filter: hue-rotate(4turn);
+  }
+} */
+
+
+
+
+/*  */
+
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+span{
+  background-image: url('https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-512.png');
+  background-size: cover;
+  position: absolute;
+  animation: movingheart 8s linear infinite;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes movingheart{
+  0%{
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      filter: hue-rotate(0turn);
+  }
+  100%{
+     transform: translate(-50%, -5000%);
+     opacity: 0;
+     filter: hue-rotate(4turn);
+  }
+}
